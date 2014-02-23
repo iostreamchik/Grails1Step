@@ -6,7 +6,7 @@ class Person {
     Date dismissDate
 
     static constraints = {
-        name(size: 2..20,matches: '\\w')
+        name(size: 2..20,matches: '\\w*')
         salary(blank: false)
         hireDate(blank: false)
     }
