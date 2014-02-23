@@ -13,4 +13,5 @@ class Person {
     }
 
     static hasMany = [departments: Department]
+    static belongsTo = [Department]
 }
