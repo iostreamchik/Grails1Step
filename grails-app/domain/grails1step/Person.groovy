@@ -1,5 +1,4 @@
 package grails1step
-
 class Person {
     String name
     float salary
@@ -7,7 +6,7 @@ class Person {
     Date dismissDate
 
     static constraints = {
-        name(size: 2..20,matches: '/^[a-z\' -]$/i')
+        name(size: 2..20,matches: '\\w')
         salary(blank: false)
         hireDate(blank: false)
     }
