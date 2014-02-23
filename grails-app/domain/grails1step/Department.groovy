@@ -9,5 +9,4 @@ class Department {
     }
 
     static hasMany = [persons: Person]
-    static belongsTo = [Person]
 }
