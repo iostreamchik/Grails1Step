@@ -7,7 +7,7 @@ class PersonController {
     }
 
     def result = {
-        def person = Person.findAllByNameLike(params.name)
+        def person = Person.findAllByNameLike("%${params.name}%")
         return [persons: person, term: params.name]
     }
 
