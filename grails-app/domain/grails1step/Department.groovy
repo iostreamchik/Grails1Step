@@ -9,4 +9,9 @@ class Department {
     }
 
     static hasMany = [persons: Person]
+
+    @Override
+    String toString() {
+        "${name}"
+    }
 }
