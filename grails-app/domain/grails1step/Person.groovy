@@ -17,7 +17,7 @@ class Person {
     static belongsTo = [Department]
 
     @Override
-    public String toString() {
-        "${name} (${id})"
+    String toString() {
+        "${name}"
     }
 }

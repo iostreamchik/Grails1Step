@@ -1,4 +1,5 @@
 <%@ page import="grails1step.Person" contentType="text/html;charset=UTF-8" %>
+
 <html>
 <head>
     <title>Result</title>
@@ -16,7 +17,9 @@ Found <strong>${persons.size()}</strong> hits.
     <g:each var="person" in="${persons}">
         <li>Name: ${person.name}</li>
         <li>Salary: ${person.salary} $</li>
-        <li>Department: ${person.departments}</li>
+        <g:each var="department" in="${person.departments}">
+            <li>Department: ${department.name} ${department.enterprise.name}</li>
+        </g:each>
     </g:each>
 </ul>
 <g:link action="search">Search again</g:link>

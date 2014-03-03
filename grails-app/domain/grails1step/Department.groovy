@@ -8,6 +8,8 @@ class Department {
         name(blank: false, unique: true)
     }
 
+    static belongsTo = [enterprise: Enterprise]
+
     static hasMany = [persons: Person]
 
     @Override
